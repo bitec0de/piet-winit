@@ -1,0 +1,19 @@
+[package]
+name = "piet-winit"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+optimize = ["log/release_max_level_warn"]
+default = ["optimize"]
+
+[dependencies]
+env_logger = "0.10"
+error-iter = "0.4"
+# euclid = "0.22"
+log = "0.4"
+pixels = "0.12" #{ path = "../.." }
+winit = "0.27"
+winit_input_helper = "0.13"
+
+piet-common = "0.6"
