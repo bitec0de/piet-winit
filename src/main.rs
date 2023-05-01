@@ -60,7 +60,7 @@ fn main() -> Result<(), Error> {
         let width = window.inner_size().width;
         let height = window.inner_size().height;
         let mut bitmap = device
-            .bitmap_target(width as usize, height as usize, 1.0)
+            .bitmap_target(width as usize, height as usize, window.scale_factor())
             .unwrap();
 
         // Draw the current frame
